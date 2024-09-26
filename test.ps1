@@ -1,9 +1,3 @@
-param (
-    [string]$input
-)
-
 Write-Output "Shell test"
-if (-not $input) {
-    $input = Read-Host "? Input"
-}
+$input = Read-Host -Prompt "? Input"
 Write-Output "-> $input"
