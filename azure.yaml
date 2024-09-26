@@ -1,0 +1,14 @@
+name: azd-test
+hooks:
+  test-python:
+    posix:
+      shell: sh
+      run: ./test-python.sh
+      interactive: true
+      continueOnError: false
+  test-shell:
+    posix:
+      shell: sh
+      run: ./test.sh
+      interactive: true
+      continueOnError: false
