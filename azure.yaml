@@ -1,14 +1,19 @@
 name: azd-test
 hooks:
-  test-python:
+  test-py:
     posix:
       shell: sh
       run: ./test-python.sh
       interactive: true
       continueOnError: false
-  test-shell:
+  test-sh:
     posix:
       shell: sh
       run: ./test.sh
       interactive: true
       continueOnError: false
+  test-ps:
+    shell: pwsh
+    run: ./test.ps1
+    interactive: true
+    continueOnError: false
